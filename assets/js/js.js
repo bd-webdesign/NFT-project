@@ -18,3 +18,12 @@ $(document).ready(function () {
         }, '300');
     });
 });
+
+// Collection
+$('.buy').click(function(){
+    $('.bottom').addClass("clicked");
+  });
+  
+  $('.remove').click(function(){
+    $('.bottom').removeClass("clicked");
+  });
