@@ -9,23 +9,17 @@
     padding: 0;
 }
 
-<<<<<<< HEAD
 body{
     height: 1000px;
 }
 
-=======
->>>>>>> 5b3ff205d68a186b88219a57286ea7b4164a36b8
 .nav {
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5), 2px 2px 3px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
     position: fixed;
     width: 100%;
-=======
     position: relative;
->>>>>>> 5b3ff205d68a186b88219a57286ea7b4164a36b8
     height: 65px;
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     /* background: rgb(30,121,229); */
@@ -40,12 +34,9 @@ body{
 .nav .logo img {
     width: 45px;
     height: 45px;
-<<<<<<< HEAD
     /* box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.25); */
     box-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5), 2px 2px 3px rgba(0, 0, 0, 0.5);
-=======
     box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.25);
->>>>>>> 5b3ff205d68a186b88219a57286ea7b4164a36b8
     border-radius: 50%;
 }
 
@@ -103,29 +94,19 @@ body{
 
 /*---MENU---*/
 .nav ul {
-<<<<<<< HEAD
-=======
     margin-left: 15px;
->>>>>>> 5b3ff205d68a186b88219a57286ea7b4164a36b8
     display: flex;
     list-style: none;
 }
 
 .nav ul li:nth-child(1) {
-<<<<<<< HEAD
     padding-left: 15px;
-=======
->>>>>>> 5b3ff205d68a186b88219a57286ea7b4164a36b8
     align-items: center;
     display: flex;
 }
 
-<<<<<<< HEAD
 .nav .menu,
 .nav .social {
-=======
-.nav .menu {
->>>>>>> 5b3ff205d68a186b88219a57286ea7b4164a36b8
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,13 +125,10 @@ body{
     position: relative;
 }
 
-<<<<<<< HEAD
-=======
 .social{
     display: flex;
 }
 
->>>>>>> 5b3ff205d68a186b88219a57286ea7b4164a36b8
 .nav .menu a:hover,
 .nav .menu a:active {
     padding: 10px 0 10px 0;
@@ -160,7 +138,7 @@ body{
 }
 
 /*---SOCIAL---*/
-<<<<<<< HEAD
+
 .fa-instagram,
 .fa-twitter {
     text-shadow: none;
@@ -225,10 +203,9 @@ body{
     #button {
         margin: 30px;
     }
-=======
+
 .fa-instagram:hover,
 .fa-twitter:hover {
     font-size: larger;
     transition: all 0.2s ease;
->>>>>>> 5b3ff205d68a186b88219a57286ea7b4164a36b8
 }
