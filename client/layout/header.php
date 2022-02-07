@@ -6,10 +6,10 @@
     </ul>
     <ul>
         <div class="menu">
-            <li><a href="">About</a></li>
-            <li><a href="">Collection</a></li>
-            <li><a href="">Team</a></li>
-            <li><a href="">FAQs</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#faqs">FAQs</a></li>
         </div>
     </ul>
     <ul>
