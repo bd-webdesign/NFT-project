@@ -9,32 +9,34 @@
     padding: 0;
 }
 
-body{
-    height: 1000px;
+body {
+    overflow-x: hidden;
 }
 
-.nav {
+.nav , .footer {
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5), 2px 2px 3px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    position: relative;
-    height: 65px;
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-    /* background: rgb(30,121,229); */
-    /* background: radial-gradient(circle, rgba(30,121,229,1) 0%, rgba(148,119,122,1) 50%, rgba(216,120,60,1) 100%); */
-    /* background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%); */
-    /* box-shadow: 0 1rem 1.25rem 0 rgba(148, 187, 233, 1), */
     box-shadow: 0 -0.25rem 1.5rem rgba(148, 119, 122, 1) inset,
         0 0.75rem 0.5rem rgba(255, 255, 255, 0.4) inset,
         0 0.25rem 0.5rem 0 rgba(180, 70, 207, 1) inset;
+    width: 100%;
+}
+
+/* HEADER */
+
+
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 65px;
 }
 
 .nav .logo img {
     width: 45px;
     height: 45px;
-    /* box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.25); */
     box-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5), 2px 2px 3px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.25);
     border-radius: 50%;
@@ -51,49 +53,8 @@ body{
     padding: 0;
 }
 
-/* ---MENU---
-.nav .menu,
-.nav .social {
-    display: flex;
-    list-style: none;
-    margin-left: 25%;
-}
-
-.nav .menu li, .nav .social li {
-    padding: 20px 30px 20px 0;
-}
-
-.nav .menu li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 400;
-    transition: all 0.2s ease-in-out;
-    position: relative;
-}
-
-.nav .menu li a:hover,
-.nav .menu li a:active {
-    padding: 10px 0 10px 0;
-    letter-spacing: 3px;
-    border-top: 2px solid rgb(255, 255, 255);
-    border-bottom: 2px solid rgb(255, 255, 255);
-}
-
-/*---SOCIAL---
-.nav .social li img {
-    padding: 7px;
-    border: 2px solid var(--bg-color);
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 30%;
-    /* background-color: var(--orange); 
-}
-
-.nav .social li a:hover,
-.nav .social li a:active {} */
-
 /*---MENU---*/
-.nav ul {
+.nav ul, .footer ul{
     margin-left: 15px;
     display: flex;
     list-style: none;
@@ -106,17 +67,19 @@ body{
 }
 
 .nav .menu,
-.nav .social {
+.nav .social,
+.footer .social,
+.footer p{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.nav ul li {
-    padding: 20px 30px 20px 0;
+.nav ul li, .footer ul li {
+    padding: 10px 30px 10px 0;
 }
 
-.nav li a {
+.nav li a , .footer li a{
     text-decoration: none;
     color: #ffffff;
     font-size: 20px;
@@ -139,23 +102,21 @@ body{
 
 /*---SOCIAL---*/
 
-.fa-instagram,
-.fa-twitter {
+.social li a:nth-child(-n+2) {
     text-shadow: none;
     font-size: 25px;
     transition: all ease-in-out 150ms;
 }
 
-.fa-instagram:hover,
-.fa-twitter:hover,
-.opensea:hover {
+.social li:hover {
     transform: translateY(-5px);
     cursor: pointer;
 }
 
 .social img{
     margin-left: -8px;
-}
+    margin-top: 3px;
+} 
 
 /***BUTTON BACK TO TOP***/
 #button {
@@ -205,8 +166,10 @@ body{
     }
 }
 
-.fa-instagram:hover,
-.fa-twitter:hover {
-    font-size: larger;
-    transition: all 0.2s ease;
+
+/* FOOTER */
+
+.footer p{
+    color: rgb(255, 255, 255);
+    padding: 0 20px;
 }

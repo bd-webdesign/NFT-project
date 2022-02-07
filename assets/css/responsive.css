@@ -1,0 +1,19 @@
+/* FOOTER */
+
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer ul {
+        justify-content: center;
+        margin: 0px;
+    }
+    .footer p{
+        order: -1;
+        margin: 2px;
+    }
+.footer ul li{
+    padding: 10px 30px 10px 30px;
+}
+  }
