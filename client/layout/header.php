@@ -34,11 +34,7 @@
                     <li><a href="https://www.instagram.com/nftales2022/"><i class="fab fa-instagram"></i></a></li>
                     <li><a href="https://twitter.com/nature_fairy22"><i class="fab fa-twitter"></i></a></li>
                     <li>
-<<<<<<< HEAD
                         <a href="https://opensea.io/collection/nature-evoking-emotions"><img src="/NFT/assets/img/icons/opensea.svg" class="opensea" width="40px" height="40px"></a>
-=======
-                        <a href="https://opensea.io/collection/nature-evoking-emotions"><img src="assets/img/icons/opensea.svg" class="opensea" width="40px" height="40px"></a>
->>>>>>> 2306d130a5a8484ccad1358dcd3681f3656a0826
                     </li>
                 </div>
             </ul>
@@ -63,11 +59,7 @@
                         <li><a href="https://www.instagram.com/nftales2022/"><i class="fab fa-instagram"></i></a></li>
                         <li><a href="https://twitter.com/nature_fairy22"><i class="fab fa-twitter"></i></a></li>
                         <li>
-<<<<<<< HEAD
                             <a href="https://opensea.io/collection/nature-evoking-emotions"><img src="/NFT/assets/img/icons/opensea.svg" width="40px" height="40px"></a>
-=======
-                            <a href="https://opensea.io/collection/nature-evoking-emotions"><img src="assets/img/icons/opensea.svg" width="40px" height="40px"></a>
->>>>>>> 2306d130a5a8484ccad1358dcd3681f3656a0826
                         </li>
                     </ul>
                 </div>
