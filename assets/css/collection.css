@@ -5,8 +5,12 @@
     border-radius: 20px;
 }
 
+<<<<<<< HEAD
 #cards,
 #view-collection {
+=======
+#cards {
+>>>>>>> 2306d130a5a8484ccad1358dcd3681f3656a0826
     display: flex;
     flex-wrap: wrap;
 }

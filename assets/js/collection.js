@@ -52,6 +52,7 @@ const data = [
 
 ]
 
+<<<<<<< HEAD
 var btn = $("#btn-collection");
 btn.click(function (e) {
     document.location.href = "/NFT/client/collectionView.php";
@@ -69,20 +70,49 @@ if (filename == "collectionView.php") {
 function ShowCollection() {
     var view = document.getElementById("view-collection");
     data.forEach((result) => {
+=======
+var num = 4;
+var start = 0;
+var btn = $("#btn-collection");
+btn.click(function () {
+    console.log("click");
+    start = 5;
+    document.location.href = "/NFT/client/collectionView.php";
+    num = Object.keys(data).length;
+    ShowElement();
+});
+
+function ShowElement() {
+    console.log(start);
+    const container = document.getElementById("cards");
+    //Create card element
+    console.log(num);
+    for (var i = start; i <= num; i++) {
+>>>>>>> 2306d130a5a8484ccad1358dcd3681f3656a0826
         const wrapper = document.createElement('div');
         wrapper.classList = 'wrapper';
         //Create card content
         const content = `<div class="wrapper">
         <div class="container">
-            <div class="top" id="element"><img  src="${result.iconUrl}" alt="element"></div> 
+            <div class="top" id="element"><img  src="${data[i]['iconUrl']}" alt="element"></div> 
              <div class="bottom">
                 <div class="left flex-center">
+<<<<<<< HEAD
                     <i class="material-icons" id="description">${result.description}</i>
             </div>
         </div>
     </div> `;
         view.innerHTML += content;
     })
+=======
+                    <i class="material-icons" id="description">${data[i]['description']}</i>
+            </div>
+        </div>
+    </div> `;
+
+        container.innerHTML += content;
+    }
+>>>>>>> 2306d130a5a8484ccad1358dcd3681f3656a0826
 }
 
 function ShowElement() {
