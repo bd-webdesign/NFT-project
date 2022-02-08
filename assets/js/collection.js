@@ -74,7 +74,7 @@ function ShowCollection() {
         //Create card content
         const content = `<div class="wrapper">
         <div class="container">
-            <div class="top" id="element"><img  src="${data[i]['iconUrl']}" alt="element"></div> 
+            <div class="top" id="element"><img  src="${result.iconUrl}" alt="element"></div> 
              <div class="bottom">
                 <div class="left flex-center">
                     <i class="material-icons" id="description">${result.description}</i>
