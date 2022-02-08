@@ -1,7 +1,7 @@
 <div class="footer">
-    <p>Nature Fairy Tales &copy; <?php echo date("Y"); ?></p>
+    <p class="flex-center">Nature Fairy Tales &copy; <?php echo date("Y"); ?></p>
     <ul>
-        <div class="social">
+        <div class="social flex-center">
             <li><a href="https://www.instagram.com/nftales2022/"><i class="fab fa-instagram"></i></a></li>
             <li><a href="https://twitter.com/nature_fairy22"><i class="fab fa-twitter"></i></a></li>
             <li>
@@ -9,6 +9,15 @@
             </li>
         </div>
     </ul>
-    <p>Powered by BND design</p>
+    <p class="flex-center">Powered by BND design</p>
 
 </div>
+
+</div>
+<script src="https://kit.fontawesome.com/bf492b8f48.js" crossorigin="anonymous"></script>
+<script src="assets/libs/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="assets/js/js.js?v=<?php echo time(); ?>"></script>
+<script type="text/javascript" src="assets/js/collection.js?v=<?php echo time(); ?>"></script>
+</body>
+
+</html>

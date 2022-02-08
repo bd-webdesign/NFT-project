@@ -11,6 +11,15 @@
 
 body {
     overflow-x: hidden;
+    min-width: 270px;
+    background: rgb(30,121,229);
+    background: linear-gradient(150deg, rgba(30,121,229,1) 0%, rgba(216,120,60,1) 100%);
+}
+
+.stars{
+    width: 100%;
+    height: 100%;
+    background: url(/NFT/assets/img/icons/stars.png) repeat top center;
 }
 
 .nav , .footer {
@@ -22,6 +31,13 @@ body {
         0 0.75rem 0.5rem rgba(255, 255, 255, 0.4) inset,
         0 0.25rem 0.5rem 0 rgba(180, 70, 207, 1) inset;
     width: 100%;
+    color: #fff;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* HEADER */
@@ -44,9 +60,8 @@ body {
 
 
 .nav .text {
-    color: rgb(255, 255, 255);
     font-size: 25px;
-    min-width: 200px;
+    min-width: 190px;
     display: flex;
     margin-left: -15px;
     align-items: center;
@@ -55,7 +70,7 @@ body {
 
 /*---MENU---*/
 .nav ul, .footer ul{
-    margin-left: 15px;
+    /* margin-left: 15px; */
     display: flex;
     list-style: none;
 }
@@ -64,15 +79,6 @@ body {
     padding-left: 15px;
     align-items: center;
     display: flex;
-}
-
-.nav .menu,
-.nav .social,
-.footer .social,
-.footer p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .nav ul li, .footer ul li {
@@ -88,12 +94,9 @@ body {
     position: relative;
 }
 
-.social{
-    display: flex;
-}
-
 .nav .menu a:hover,
-.nav .menu a:active {
+.nav .menu a:active,
+.phone-menu a:active {
     padding: 10px 0 10px 0;
     letter-spacing: 3px;
     border-top: 2px solid rgb(255, 255, 255);
@@ -173,3 +176,129 @@ body {
     color: rgb(255, 255, 255);
     padding: 0 20px;
 }
+
+/*PHONE MENU*/
+
+.nav .bar {
+    display: none;
+    font-size: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+}
+
+.phone-menu {
+    /* background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); */
+    /* background: linear-gradient(90deg, rgba(216, 120, 60, 1) 0%, rgba(30, 121, 229, 1) 100%); */
+    background: rgb(30,121,229);
+    background: linear-gradient(150deg, rgba(30,121,229,1) 0%, rgba(216,120,60,1) 100%);
+    box-shadow: 0 -0.25rem 1.5rem rgb(165, 165, 165) inset,
+        0 0.75rem 0.5rem rgba(204, 203, 203, 0.4) inset,
+        0 0.25rem 0.5rem 0 rgb(190, 188, 190) inset;
+    color: #fff;
+    overflow: hidden;
+    display: none;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5), 2px 2px 3px rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 100%;
+}
+
+.phone-menu .fa-times {
+    cursor: pointer;
+    position: fixed;
+    font-size: 25px;
+    top: 20px;
+    right: 20px;
+}
+
+.phone-menu .menu {
+    top: 25%;
+    bottom: 25%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.phone-menu li {
+    padding: 20px;
+    list-style: none;
+}
+
+.phone-menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* 
+.phone-menu a:active {
+    padding: 10px 0 10px 0;
+    letter-spacing: 3px;
+    transform: scale(0.3);
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+} */
+
+.phone-menu .phone-social li a:active {
+    border: none;
+}
+
+.phone-menu .phone-social {
+    text-align: center;
+    display: none;
+    bottom: 20px;
+    left: 25%;
+    right: 25%;
+    padding: 0;
+    font-size: 22px;
+    position: fixed;
+}
+
+.phone-menu .phone-social ul {
+    text-shadow: none;
+    list-style: none;
+}
+
+.phone-menu .phone-social ul li {
+    animation: animate 1.5s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    40%,
+    100% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(1.5);
+    }
+}
+
+.phone-menu .phone-social ul li:nth-child(1) {
+    animation-delay: -1.4s;
+}
+
+.phone-menu .phone-social ul li:nth-child(2) {
+    animation-delay: -1.2s;
+}
+
+.phone-menu .phone-social ul li:nth-child(3) {
+    animation-delay: -1.0s;
+}
+
+.phone-social img {
+    margin: 5px 0 0 -5px;
+}
+
+.show {
+    display: inline-block;
+}
+
+/*END OF PHONE MENU*/
