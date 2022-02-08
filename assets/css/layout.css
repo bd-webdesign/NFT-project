@@ -12,10 +12,7 @@
 body {
     overflow-x: hidden;
     min-width: 270px;
-<<<<<<< HEAD
     min-height: 100vh;
-=======
->>>>>>> 2306d130a5a8484ccad1358dcd3681f3656a0826
     background: rgb(30,121,229);
     background: linear-gradient(150deg, rgba(30,121,229,1) 0%, rgba(216,120,60,1) 100%);
 }
@@ -240,18 +237,6 @@ body {
     color: #fff;
 }
 
-<<<<<<< HEAD
-=======
-/* 
-.phone-menu a:active {
-    padding: 10px 0 10px 0;
-    letter-spacing: 3px;
-    transform: scale(0.3);
-    border-top: 2px solid rgb(255, 255, 255);
-    border-bottom: 2px solid rgb(255, 255, 255);
-} */
-
->>>>>>> 2306d130a5a8484ccad1358dcd3681f3656a0826
 .phone-menu .phone-social li a:active {
     border: none;
 }

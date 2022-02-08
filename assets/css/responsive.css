@@ -1,5 +1,4 @@
 /*MENU*/
-<<<<<<< HEAD
 @media (min-width: 1020px) {
     .footer{
         position: fixed;
@@ -7,8 +6,6 @@
     }
 }
 
-=======
->>>>>>> 2306d130a5a8484ccad1358dcd3681f3656a0826
 @media(max-width: 850px) {
 
     .nav {
@@ -52,10 +49,6 @@
 
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2306d130a5a8484ccad1358dcd3681f3656a0826
 @media(max-width: 270px) {
     .nav .logo {
         margin-left: 0;
