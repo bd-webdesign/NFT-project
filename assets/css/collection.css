@@ -1,7 +1,7 @@
 .collection {
     margin: 10px 10px;
     padding: 20px 0;
-    /* background-color: #91b8e7; */
+    /* background-color: #fff; */
     border-radius: 20px;
 }
 
@@ -70,7 +70,7 @@
 .wrapper .container .bottom .left {
     height: 100%;
     width: 50%;
-    background: #f4f4f4;
+    background: #c0c0c0;
 }
 
 .wrapper .container .bottom .left i {
