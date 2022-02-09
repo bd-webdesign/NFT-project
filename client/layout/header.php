@@ -23,10 +23,10 @@
             </ul>
             <ul>
                 <div class="menu flex-center">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#collection">Collection</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#faqs">FAQs</a></li>
+                    <li><a href="#about" id="about-menu">About</a></li>
+                    <li id="collection-menu"><a href="#collection" >Collection</a></li>
+                    <li><a href="#team" id="team-menu">Team</a></li>
+                    <li><a href="#faqs" id="faqs-menu">FAQs</a></li>
                 </div>
             </ul>
             <ul>
@@ -48,10 +48,10 @@
             <div class="stars">
                 <i class="fa fa-times" id="close" aria-hidden="true"></i>
                 <div class="menu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#collection">Collection</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#faqs">FAQs</a></li>
+                    <li><a href="#about" id="about-phone">About</a></li>
+                    <li id="collection-phone"><a href="#collection" >Collection</a></li>
+                    <li><a href="#team" id="team-phone">Team</a></li>
+                    <li><a href="#faqs" id="faqs-phone">FAQs</a></li>
                 </div>
                 <div class="phone-social">
                     <div>Folllow us on:</div>

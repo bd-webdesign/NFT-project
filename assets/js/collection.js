@@ -53,17 +53,52 @@ const data = [
 ]
 
 var btn = $("#btn-collection");
-btn.click(function (e) {
+btn.click(function () {
     document.location.href = "/NFT/client/collectionView.php";
 });
 
 var url = window.location.pathname;
 var filename = url.substring(url.lastIndexOf('/') + 1);
 
+function menuClick(section) {
+    document.location.href = "/NFT/index.php/" + section;
+    //*****************TODO*********************
+    // var top = $(id).offset().top - 65;
+    // console.log(top);
+    // $("html, body").animate({ scrollTop: top }, 100);
+}
+
 if (filename == "collectionView.php") {
-    $(".bar").css('display', 'none');
-    $(".nav .menu").css('display', 'none');
+
+    $("#collection-menu").css("display", "none");
+    $("#collection-phone").css("display", "none");
+
     ShowCollection();
+
+    //url back to main page selected section
+    var about = $("#about-menu");
+    about.click(function () { menuClick("#about") });
+    about = $("#about-phone");
+    about.click(function () { menuClick("#about") });
+    var team = $("#team-menu");
+    team.click(function () { menuClick("#team") });
+    team = $("#team-phone");
+    team.click(function () { menuClick("#team") });
+    var faqs = $("#faqs-menu");
+    faqs.click(function () { menuClick("#faqs") });
+    faqs = $("#faqs-phone");
+    faqs.click(function () { menuClick("#faqs") });
+}
+
+if (filename == "" || filename == "index.php") {
+    ShowElement();
+    //on scroll to fix nav and not hide sections
+    $(".menu li a").click(function () {
+        var id = $(this).attr("href");
+        var top = $(id).offset().top - 65;
+        console.log(top);
+        $("html, body").animate({scrollTop: top}, 100);
+    });
 }
 
 function ShowCollection() {
@@ -104,6 +139,4 @@ function ShowElement() {
         container.innerHTML += content;
     }
 }
-
-ShowElement();
 

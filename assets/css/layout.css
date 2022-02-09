@@ -4,6 +4,10 @@
     --orange: #d8783c;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -191,8 +195,6 @@ body {
 }
 
 .phone-menu {
-    /* background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); */
-    /* background: linear-gradient(90deg, rgba(216, 120, 60, 1) 0%, rgba(30, 121, 229, 1) 100%); */
     background: rgb(30,121,229);
     background: linear-gradient(150deg, rgba(30,121,229,1) 0%, rgba(216,120,60,1) 100%);
     box-shadow: 0 -0.25rem 1.5rem rgb(165, 165, 165) inset,
@@ -295,3 +297,12 @@ body {
 }
 
 /*END OF PHONE MENU*/
+
+.title{
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 5px;
+}

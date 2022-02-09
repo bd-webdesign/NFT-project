@@ -1,4 +1,13 @@
 $(document).ready(function () {
+
+    //on reload to scroll back to top
+    history.scrollRestoration = "manual";
+    $(window).on("beforeunload", function () {
+        $(window).scrollTop(0);
+    });
+
+    
+
     console.log("ready :)");
     var btn = $('#button');
     var menu = $('#menu');
@@ -48,7 +57,7 @@ $(document).ready(function () {
     close.click(
         clickEvent
     );
-    
+
     //resposive phone menu end
 });
 

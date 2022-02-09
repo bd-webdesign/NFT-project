@@ -1,4 +1,4 @@
-.collection{
+.collection {
     margin: 10px 10px;
     padding: 20px 0;
     /* background-color: #91b8e7; */
@@ -45,7 +45,7 @@
     background-size: 100%;
 }
 
-.wrapper .container .top img{
+.wrapper .container .top img {
     height: 100%;
     width: 100%;
     object-fit: fill;
@@ -81,6 +81,43 @@
 }
 
 #btn-collection {
-
+    display: inline-block;
+    cursor: pointer;
+    margin: 50px 0;
+    box-shadow: 2px 2px 80px -10px rgba(0,0,0,0.63);
+    -webkit-box-shadow: 2px 2px 80px -10px rgba(0,0,0,0.63);
+    -moz-box-shadow: 2px 2px 80px -10px rgba(0,0,0,0.63);
+    background: rgb(30, 121, 229);
+    background: linear-gradient(150deg, rgba(30, 121, 229, 1) 0%, rgba(216, 120, 60, 1) 100%);
+    width: 500px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5), 2px 2px 3px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+    animation: animate-btn 2s ease-in-out infinite;
 }
 
+@keyframes animate-btn {
+
+    0%,
+    40%,
+    100% {
+        transform: scale(0.9);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+}
+
+
+#btn-collection:hover {
+    transform: translateY(-5px);
+    animation: none;
+    background: rgb(30, 121, 229);
+    background: linear-gradient(150deg, rgba(216, 120, 60, 1) 0%, rgba(30, 121, 229, 1) 100%);
+}
