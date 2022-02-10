@@ -24,7 +24,7 @@
             <ul>
                 <div class="menu flex-center">
                     <li><a href="#about" id="about-menu">About</a></li>
-                    <li id="collection-menu"><a href="#collection" >Collection</a></li>
+                    <li id="collection-menu"><a href="#collection">Collection</a></li>
                     <li><a href="#team" id="team-menu">Team</a></li>
                     <li><a href="#faqs" id="faqs-menu">FAQs</a></li>
                 </div>
@@ -44,14 +44,16 @@
         </div>
 
         <!-- RESPONSIVE MENU FOR PHONE -->
-        <ul class="phone-menu">
+        <div class="phone-menu">
             <div class="stars">
                 <i class="fa fa-times" id="close" aria-hidden="true"></i>
                 <div class="menu">
-                    <li><a href="#about" id="about-phone">About</a></li>
-                    <li id="collection-phone"><a href="#collection" >Collection</a></li>
-                    <li><a href="#team" id="team-phone">Team</a></li>
-                    <li><a href="#faqs" id="faqs-phone">FAQs</a></li>
+                    <ul>
+                        <li><a href="#about" id="about-phone">About</a></li>
+                        <li id="collection-phone"><a href="#collection">Collection</a></li>
+                        <li><a href="#team" id="team-phone">Team</a></li>
+                        <li><a href="#faqs" id="faqs-phone">FAQs</a></li>
+                    </ul>
                 </div>
                 <div class="phone-social">
                     <div>Folllow us on:</div>
@@ -64,4 +66,4 @@
                     </ul>
                 </div>
             </div>
-        </ul>
+        </div>

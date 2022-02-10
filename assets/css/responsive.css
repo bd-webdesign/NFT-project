@@ -1,7 +1,7 @@
 /*MENU*/
 @media (min-width: 1020px) {
     .footer{
-        position: fixed;
+        /* position: fixed; */
         bottom: 0;
     }
 }

@@ -4,7 +4,7 @@
     --orange: #d8783c;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -17,17 +17,17 @@ body {
     overflow-x: hidden;
     min-width: 270px;
     min-height: 100vh;
-    background: rgb(30,121,229);
-    background: linear-gradient(150deg, rgba(30,121,229,1) 0%, rgba(216,120,60,1) 100%);
+    background: rgb(30, 121, 229);
+    background: linear-gradient(150deg, rgba(30, 121, 229, 1) 0%, rgba(216, 120, 60, 1) 100%);
 }
 
-.stars{
+.stars {
     width: 100%;
     height: 100%;
     background: url(/NFT/assets/img/icons/stars.png) repeat top center;
 }
 
-.nav , .footer {
+.nav, .footer {
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5), 2px 2px 3px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-between;
@@ -39,7 +39,7 @@ body {
     color: #fff;
 }
 
-.flex-center{
+.flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,7 +74,7 @@ body {
 }
 
 /*---MENU---*/
-.nav ul, .footer ul{
+.nav ul, .footer ul {
     /* margin-left: 15px; */
     display: flex;
     list-style: none;
@@ -90,7 +90,7 @@ body {
     padding: 10px 30px 10px 0;
 }
 
-.nav li a , .footer li a{
+.nav li a, .footer li a {
     text-decoration: none;
     color: #ffffff;
     font-size: 20px;
@@ -121,16 +121,16 @@ body {
     cursor: pointer;
 }
 
-.social img{
+.social img {
     margin-left: -8px;
     margin-top: 3px;
-} 
+}
 
 /***BUTTON BACK TO TOP***/
 #button {
     display: inline-block;
     box-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5), 2px 2px 3px rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient(to right, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: linear-gradient(150deg, rgba(30, 121, 229, 1) 0%, rgba(216, 120, 60, 1) 100%);
     width: 50px;
     height: 50px;
     border: none;
@@ -158,10 +158,7 @@ body {
 
 #button:hover {
     cursor: pointer;
-    box-shadow: 0 -0.20rem 0.9rem rgba(148, 119, 122, 1) inset,
-    0 0.55rem 0.1rem rgba(255, 255, 255, 0.4) inset,
-    0 0.20rem 0.1rem 0 rgba(180, 70, 207, 1) inset;
-    background-image: linear-gradient(to left, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: linear-gradient(150deg, rgba(216, 120, 60, 1) 0%, rgba(30, 121, 229, 1) 100%);
 }
 
 #button.show {
@@ -178,7 +175,7 @@ body {
 
 /* FOOTER */
 
-.footer p{
+.footer p {
     color: rgb(255, 255, 255);
     padding: 0 20px;
 }
@@ -195,8 +192,8 @@ body {
 }
 
 .phone-menu {
-    background: rgb(30,121,229);
-    background: linear-gradient(150deg, rgba(30,121,229,1) 0%, rgba(216,120,60,1) 100%);
+    background: rgb(30, 121, 229);
+    background: linear-gradient(150deg, rgba(30, 121, 229, 1) 0%, rgba(216, 120, 60, 1) 100%);
     box-shadow: 0 -0.25rem 1.5rem rgb(165, 165, 165) inset,
         0 0.75rem 0.5rem rgba(204, 203, 203, 0.4) inset,
         0 0.25rem 0.5rem 0 rgb(190, 188, 190) inset;
@@ -204,7 +201,7 @@ body {
     overflow: hidden;
     display: none;
     text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5), 2px 2px 3px rgba(0, 0, 0, 0.5);
-    font-size: 25px;
+    font-size: 27px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -260,7 +257,7 @@ body {
 }
 
 .phone-menu .phone-social ul li {
-    animation: animate 1.5s ease-in-out infinite;
+    animation: animate 2s ease-in-out infinite;
 }
 
 @keyframes animate {
@@ -298,7 +295,7 @@ body {
 
 /*END OF PHONE MENU*/
 
-.title{
+.title {
     text-align: center;
     font-size: 35px;
     color: #fff;

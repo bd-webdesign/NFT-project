@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    console.log("ready :)");
 
     //on reload to scroll back to top
     history.scrollRestoration = "manual";
@@ -6,13 +7,11 @@ $(document).ready(function () {
         $(window).scrollTop(0);
     });
 
-    
-
-    console.log("ready :)");
     var btn = $('#button');
     var menu = $('#menu');
     var open = $('#open');
     var close = $('#close');
+
     //button for back to top
     $(window).scroll(function () {
         if ($(window).scrollTop() > 150) {
@@ -28,7 +27,7 @@ $(document).ready(function () {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: 0
-        }, '300');
+        }, '200');
     });
     //end button for back to top
 
@@ -39,6 +38,15 @@ $(document).ready(function () {
             {
                 complete: function () {
                     $(".phone-social").css('display', 'block');
+                    let s = 0;
+                    for (let i = 1; i <= 4; i++) {
+                        let delay = s + "s";
+                        console.log(".phone-menu .menu ul li:nth-child(" + i + ")");
+                        $(".phone-menu .menu ul li:nth-child(" + i + ")").css({
+                            "animation": "animate 2.5s " + delay + " ease-in-out"
+                        });
+                        s += 0.2;
+                    }
                 }
             });
         $(".phone-menu").addClass("show");
