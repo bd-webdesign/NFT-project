@@ -41,7 +41,6 @@ $(document).ready(function () {
                     let s = 0;
                     for (let i = 1; i <= 4; i++) {
                         let delay = s + "s";
-                        console.log(".phone-menu .menu ul li:nth-child(" + i + ")");
                         $(".phone-menu .menu ul li:nth-child(" + i + ")").css({
                             "animation": "animate 2.5s " + delay + " ease-in-out"
                         });
@@ -67,5 +66,13 @@ $(document).ready(function () {
     );
 
     //resposive phone menu end
+
 });
 
+    //REDIRECT
+    var url = window.location.pathname;
+    var filename = url.substring(url.lastIndexOf('/') + 1);
+
+    if (filename == "" || filename == "index.php"){
+        document.location.href = "/NFT/home";
+    }

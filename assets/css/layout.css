@@ -293,6 +293,18 @@ body {
     display: inline-block;
 }
 
+.phone-menu .moon {
+    position: absolute;
+    opacity: 0.8;
+    top: 10%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    box-shadow: -9px 7px 0 3px white;
+    border-radius: 50%;
+}
+
 /*END OF PHONE MENU*/
 
 .title {

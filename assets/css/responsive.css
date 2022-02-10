@@ -1,10 +1,4 @@
 /*MENU*/
-@media (min-width: 1020px) {
-    .footer{
-        /* position: fixed; */
-        bottom: 0;
-    }
-}
 
 @media(max-width: 850px) {
 
@@ -49,6 +43,13 @@
 
 }
 
+@media(max-width: 420px) {
+    .wrapper {
+        width: 300px;
+        height: 300px;
+    }
+}
+
 @media(max-width: 270px) {
     .nav .logo {
         margin-left: 0;
@@ -60,6 +61,8 @@
     }
 }
 /*END OF MENU*/
+
+/* COLLECTION */
 
 
 /* FOOTER */

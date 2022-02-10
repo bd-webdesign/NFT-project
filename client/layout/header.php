@@ -46,6 +46,7 @@
         <!-- RESPONSIVE MENU FOR PHONE -->
         <div class="phone-menu">
             <div class="stars">
+                <div class="moon"></div>
                 <i class="fa fa-times" id="close" aria-hidden="true"></i>
                 <div class="menu">
                     <ul>
